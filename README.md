@@ -11,15 +11,12 @@ An architectural overview of an anomaly detection system.
 The document gives an architectural overview of an anomaly detection system that identifies anomalous ETL jobs 
 that populate the data warehouse.
 
-The Business Intelligence team is responsible for maintaining the data warehouse.The data warehouse is populated  
-by different ETL jobs. The anomaly detection system identifies ETL jobs that ran successfully, but have discrepancy  
+The Business Intelligence team is responsible for maintaining the data warehouse.The data warehouse is populated by different ETL jobs. The anomaly detection system identifies ETL jobs that ran successfully, but have discrepancy  
 in the imported data. Like the number of rows being populated in the data warehouse not being in the expected range.
 
 
 ## Overview
-The anomaly detection system uses scikit-learn implementation of isolation forest algorithm to identify anomalous 
-ETL jobs. PySpark is used to schedule historical data load. The overall infrastructure is set up using AWS technologies. 
-Once the system detects an anomaly in the ETL jobs it raises a ticket to notify relevant stakeholders.
+The anomaly detection system uses scikit-learn implementation of isolation forest algorithm to identify anomalous ETL jobs. PySpark is used to schedule historical data load. The overall infrastructure is set up using AWS technologies. Once the system detects an anomaly in the ETL jobs it raises a ticket to notify relevant stakeholders.
 
 
 ## Architecture Diagram
